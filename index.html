@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to read a research paper in 30 minutes</title>
+<meta name="description" content="A short, practical guide for biotech students, with a free checklist.">
+
+<!-- ============================================================
+     PASTE YOUR USERMAVEN TRACKING SNIPPET HERE.
+     Copy it exactly from your Usermaven dashboard (Settings > Installation).
+     Do not write it from memory.
+     ============================================================ -->
+
+<style>
+  :root {
+    --paper: #f3f6f1;
+    --ink: #1c2a24;
+    --muted: #55655c;
+    --accent: #1f6f5c;
+    --accent-ink: #ffffff;
+    --line: #cfd9d1;
+    --highlight: #fff2a8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #121a16;
+      --ink: #e6efe9;
+      --muted: #9fb0a6;
+      --accent: #5fc4a6;
+      --accent-ink: #0d1713;
+      --line: #2a3a32;
+      --highlight: #4a4420;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.65;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 22px 80px; }
+  h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+    line-height: 1.15;
+    margin: 0 0 18px;
+    letter-spacing: -0.01em;
+  }
+  h2 { font-size: 1.5rem; margin: 56px 0 12px; }
+  p { margin: 0 0 16px; }
+  .lede { font-size: 1.2rem; color: var(--muted); }
+  mark { background: var(--highlight); color: inherit; padding: 0 3px; }
+
+  .btn {
+    display: inline-block;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: 2px solid var(--accent);
+    background: var(--accent);
+    color: var(--accent-ink);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btn.secondary { background: transparent; color: var(--accent); }
+  .btn:focus-visible, a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+
+  .steps { padding-left: 1.2em; }
+  .steps li { margin-bottom: 18px; }
+  .steps strong { display: block; }
+
+  .box {
+    border-left: 4px solid var(--accent);
+    padding: 4px 0 4px 18px;
+    margin: 28px 0;
+  }
+  .links a { color: var(--accent); }
+  footer {
+    margin-top: 72px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-family: system-ui, sans-serif;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Read a research paper in 30 minutes</h1>
+  <p class="lede">Most students read papers front to back and get lost in the methods. Read them in this order instead.</p>
+
+  <p>
+    <!-- EVENT: checklist_download_clicked (hero) -->
+    <a class="btn" id="download-hero" href="checklist.pdf" download>Download the free checklist</a>
+  </p>
+
+  <!-- Tracked as guide_viewed when this section scrolls into view -->
+  <section id="guide" data-section="guide">
+    <h2>The reading order</h2>
+    <ol class="steps">
+      <li><strong>Read the title and abstract.</strong>
+        Decide in two minutes whether the paper answers your question. If not, stop.</li>
+      <li><strong>Look at the figures and their captions.</strong>
+        Most papers tell their main story here. Write one sentence per figure.</li>
+      <li><strong>Read the introduction's last paragraph.</strong>
+        It states what the authors set out to test.</li>
+      <li><strong>Skim the methods for the design, not the details.</strong>
+        Note the sample, the controls, and the main measurement.</li>
+      <li><strong>Read the results against your figure notes.</strong>
+        Check that the text matches what you concluded from the figures.</li>
+      <li><strong>Read the discussion last, and read it critically.</strong>
+        Look for claims the data does not support.</li>
+    </ol>
+
+    <div class="box">
+      <p><mark>Quick test:</mark> can you state the paper's question, method, and main result in three sentences? If so, you have read it well enough.</p>
+    </div>
+  </section>
+
+  <h2>Get the checklist and future guides</h2>
+  <p>The checklist is a one-page PDF you can keep next to you while reading. For new guides on lab skills and R for biologists, join the newsletter.</p>
+  <p>
+    <!-- EVENT: checklist_download_clicked (bottom) -->
+    <a class="btn" id="download-bottom" href="checklist.pdf" download>Download the checklist</a>
+    <!-- EVENT: newsletter_signup_clicked. Replace # with your Google Form link. -->
+    <a class="btn secondary" id="newsletter" href="https://forms.gle/BxXKQuDJGBhyyc1o8" target="_blank" rel="noopener">Join the newsletter</a>
+  </p>
+
+  <h2>Free resources I recommend</h2>
+  <p class="links">
+    <!-- EVENT: external_link_clicked. Replace the example URLs with real ones. -->
+    <a href="https://pubmed.ncbi.nlm.nih.gov/" data-link-category="database" target="_blank" rel="noopener">PubMed</a> for finding papers<br>
+    <a href="https://scholar.google.com/" data-link-category="database" target="_blank" rel="noopener">Google Scholar</a> for tracking citations<br>
+    <a href="https://www.zotero.org/" data-link-category="tool" target="_blank" rel="noopener">Zotero</a> for organizing what you read
+  </p>
+
+  <footer>
+    This page uses Usermaven analytics to count visits and clicks. No personal data is collected beyond what you choose to submit in the newsletter form.
+  </footer>
+</main>
+
+<script>
+  // Safe wrapper: the page still works if the tracker is blocked or not installed yet.
+  // Check Usermaven's docs for the exact current syntax and adjust this one line if needed.
+  function track(eventName, props) {
+    try {
+      if (typeof window.usermaven === "function") {
+        window.usermaven("track", eventName, props || {});
+      } else {
+        console.log("[track - tracker not loaded]", eventName, props);
+      }
+    } catch (e) { console.warn("Tracking failed", e); }
+  }
+
+  // checklist_download_clicked
+  [["download-hero", "hero"], ["download-bottom", "bottom"]].forEach(function (pair) {
+    var el = document.getElementById(pair[0]);
+    if (el) el.addEventListener("click", function () {
+      track("checklist_download_clicked", { file_name: "checklist.pdf", button_location: pair[1] });
+    });
+  });
+
+  // newsletter_signup_clicked
+  var news = document.getElementById("newsletter");
+  if (news) news.addEventListener("click", function () {
+    track("newsletter_signup_clicked", { button_location: "bottom" });
+  });
+
+  // external_link_clicked
+  document.querySelectorAll("a[data-link-category]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      track("external_link_clicked", { link_url: a.href, link_category: a.dataset.linkCategory });
+    });
+  });
+
+  // guide_viewed: fires once when the guide section is about 40% visible
+  var guide = document.querySelector("[data-section='guide']");
+  if (guide && "IntersectionObserver" in window) {
+    var seen = false;
+    new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && !seen) {
+          seen = true;
+          track("guide_viewed", { section_name: "reading_order" });
+          obs.disconnect();
+        }
+      });
+    }, { threshold: 0.4 }).observe(guide);
+  }
+</script>
+</body>
+</html>
